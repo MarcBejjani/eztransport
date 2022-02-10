@@ -1,0 +1,185 @@
+.material-icons-outlined.md-18 {
+  font-size: 18px;
+}
+.material-icons-outlined.md-24 {
+  font-size: 24px;
+}
+.material-icons-outlined.md-36 {
+  font-size: 36px;
+}
+.material-icons-outlined.md-48 {
+  font-size: 48px;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-2.5px);
+  }
+}
+
+#bookCard:hover .bounce,
+#offerCard:hover .bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-custom {
+  color: black;
+  background-color: rgb(240, 240, 240);
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.navbar-custom li {
+  margin: 1px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.navbar-custom a:hover{
+    color: orangered;
+    font-weight: 600;
+}
+
+.navbar-custom a {
+  text-decoration: none;
+  color: black;
+  transition: all 0;
+}
+
+#carpoolContainer {
+  margin: 0 1.5rem;
+  background-color: rgb(240, 240, 240);
+  padding: 2rem;
+  height: max-content;
+  border-radius: 10px;
+  padding-bottom: 20rem;
+  margin-bottom: 2rem;
+}
+
+#carpoolContainer h1, h3 {
+  text-align: center;
+}
+
+#carpoolContainer h3,h4,p{
+    padding: 0 3rem;
+}
+
+#cardContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+#cardContainer h2 {
+  margin-top: 4rem;
+}
+
+#bookCard,
+#offerCard {
+  background-color: white;
+  display: inline-block;
+  width: 30%;
+  height: 20rem;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 0px;
+  border-color: lightgray;
+  top: 0;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 3px 9px 0;
+  transition: all 500ms;
+}
+
+#bookCard:hover,
+#offerCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 8px 24px;
+  color: orangered;
+}
+
+#offerCard {
+  margin-left: 2rem;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#cardContainer .btn{
+    transition: all 500ms;
+    border-style: none;
+    background-color: rgb(240, 240, 240);
+}
+
+#cardContainer .btn:hover{
+    background-color: orangered;
+    color: white;
+}
+
+#cardContainer h2{
+    margin-bottom: 3rem;
+}
+
+.panel{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.panel-heading{    
+    border-bottom-style: none;
+}
+
+.panel-heading h3{
+    color: orangered;
+}
+
+.panel-body span{
+    color: orangered;
+}
+
+.panel-body .btn{
+    position: relative;
+    border-style: none;
+    background-color: rgb(240, 240, 240);
+    transition: all 500ms;
+    margin-top: 2rem;
+    
+}
+
+.panel-body .btn:hover{
+    background-color: orangered;
+    color: white;
+}
