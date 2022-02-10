@@ -1,0 +1,28 @@
+<%- include('../_partial/_header'); -%>
+
+<table style="width:100%">
+    <tr>
+      <th>Plate Number</th>
+      <th>Model</th>
+      <th>Capacity</th>
+      <th>Week Day</th>
+      <th>From</th>
+      <th>To</th>
+    </tr>
+    <% for (var i =0; i <length;  i++) { %>
+        <tr>
+            <td><%= data[i].carNumber%></td>
+            <td><%= data[i].model%></td>
+            <td><%= data[i].capacity%></td>
+            <td><%= data[i].date%></td>
+            <td><%= data[i].source%></td>
+            <td><%= data[i].destination%></td>
+            <td><button type="button">Book</button></td>
+        </tr> 
+        <% } %>
+  </table>
+
+
+
+
+<%- include ('../_partial/_footer'); -%>

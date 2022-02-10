@@ -1,0 +1,24 @@
+<%- include('../_partial/_header'); -%>
+
+<table style="width:100%">
+    <tr>
+      <th>Plate Number</th>
+      <th>Week Day</th>
+      <th>Time From</th>
+      <th>Time To</th>
+    </tr>
+    <% for (var i =0; i <length;  i++) { %>
+        <tr>
+            <td><%= data[i].plateNumber%></td>
+            <td><%= data[i].routeID%></td>
+            <td><%= data[i].timeFrom%></td>
+            <td><%= data[i].timeTo%></td>
+            <td><input type="submit" class="btn btn-default navbar-btn" value="Check Seats" /></td>
+        </tr> 
+        <% } %>
+  </table>
+
+
+
+
+<%- include ('../_partial/_footer'); -%>

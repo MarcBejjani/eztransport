@@ -1,0 +1,64 @@
+<%- include('../_partial/_header'); -%>
+<div id="carpoolContainer">
+    <div class="panel panel-default">
+ 
+        <div class="panel-heading">
+            <h3>Offer Carpool</h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-signin" method="POST" action="/offer">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="email" class="form-control" placeholder="Email address" name="email"
+                        aria-describedby="basic-addon1">
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><span class="material-icons-outlined md-18">
+                        car_rental
+                        </span></span>
+                    <input type="text" class="form-control" placeholder="Model" name="model" aria-describedby="basic-addon1">
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><span class="material-icons-outlined md-18">
+                        pin
+                        </span></span>
+                    <input type="text" class="form-control" placeholder="Plate Number" name="plate" aria-describedby="basic-addon1">
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><span class="material-icons-outlined md-18">
+                        groups
+                        </span></span>
+                    <input type="text" class="form-control" placeholder="Capacity" name="capacity" aria-describedby="basic-addon1">
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><span class="material-icons-outlined md-18">
+                        location_on
+                        </span></span>
+                    <input type="text" class="form-control" placeholder="From" name="source" aria-describedby="basic-addon1">
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><span class="material-icons-outlined md-18">
+                        pin_drop
+                        </span></span>
+                    <input type="text" class="form-control" placeholder="To" name="destination" aria-describedby="basic-addon1">
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><span class="material-icons-outlined md-18">
+                        calendar_today
+                        </span></span>
+                    <input type="text" class="form-control" placeholder="YYYY-MM-DD hh:mm:ss" name="date" aria-describedby="basic-addon1">
+                </div>
+ 
+                <input type="submit" class="btn btn-default navbar-btn" value="Offer" />
+ 
+            </form>
+    </div>
+</div>
+</div>
+<%- include('../_partial/_footer'); -%>

@@ -1,0 +1,34 @@
+<%- include('../_partial/_header'); -%>
+
+
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>Plate Number</th>
+      <th>Route ID</th>
+      <th>Week Day</th>
+      <th>Time From</th>
+      <th>Time To</th>
+    </tr>
+  </thead>
+  <tbody>
+    <form class="form-signin" method="POST" action="/bus">
+    <% for (var i =0; i <length;  i++) { %>
+        <tr>
+            <td><%= data[i].plateNumber%></td>
+            <td><%= data[i].routeID%></td>
+            <td><%= data[i].weekday%></td>
+            <td><%= data[i].timeFrom%></td>
+            <td><%= data[i].timeTo%></td>
+            <td><input type="submit" class="btn btn-default navbar-btn" value="Check Seats" /></td>
+        </tr> 
+        <% } %>
+    </form>
+  </tbody>
+  </table>
+
+
+
+
+
+<%- include ('../_partial/_footer'); -%>
